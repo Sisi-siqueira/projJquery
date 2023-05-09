@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma palavra</title>
+    <link rel="stylesheet" href="style.css">
+
+   
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function() {
+        var frases = [
+        "Eu sou o caminho, a verdade e a vida. Ninguém vem ao Pai senão por mim." ,
+
+        "Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna." ,
+
+        "Eu sou a luz do mundo; quem me segue não andará em trevas, mas terá a luz da vida." ,
+
+        "Vinde a mim todos os que estais cansados e oprimidos, e eu vos aliviarei.",
+
+        "Assim, pois, todo aquele que dentre vós não renuncia a tudo o que possui, não pode ser meu discípulo.",
+
+        "Ame o Senhor, seu Deus, com todo o seu coração, com toda a sua alma, com toda a sua mente e com todas as suas forças." ,
+
+        "E disse-lhes: Ide por todo o mundo, pregai o evangelho a toda criatura.",
+
+        "Deixo-vos a paz; a minha paz vos dou. Não vo-la dou como o mundo a dá. Não se turbe o vosso coração, nem se atemorize." ,
+
+        "Em verdade, em verdade vos digo que, se alguém guardar a minha palavra, nunca verá a morte." ,
+
+        "Porque onde estiver o vosso tesouro, ali estará também o vosso coração." ]
+            
+        var contador = 0;
+        setInterval(function() {
+          $('#chave').text(frases[contador]);
+          contador++;
+          if (contador >= frases.length) {
+            contador = 0;
+          }
+        }, 3000);
+      });
+    </script>
+    
+
+  </head>
+<header>
+
+  <nav id='menu'>
+    <img src="ovelha.png" alt="ovelha">
+    <nav id="textoM">
+      <h1> Ovelhinhas do Senhor </h1>
+      <hr>
+      <p>Cria em mim um coração puro, ó Deus, e renova dentro de mim um espírito estável. (Salmos 51:10) </p>
+    </nav>
+   
+  </nav>
+ 
+
+</header>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#66318b" fill-opacity="1" d="M0,256L48,256C96,256,192,256,288,240C384,224,480,192,576,176C672,160,768,160,864,160C960,160,1056,160,1152,133.3C1248,107,1344,53,1392,26.7L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+  </svg>
+ 
+
+   <main>
+    <h1>
+      Olá amiguinho trago a palavra do dia do Senhor para você !
+    </h1>
+    <nav>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <p class="title">PALAVRA</p>
+                <p>secreta</p>
+            </div>
+            <div class="flip-card-back">
+                <p class="title">Jesus</p>
+                <p id="chave">te ama</p>
+            </div>
+        </div>
+    </div>
+    </nav>
+   </main>
+
+</body>
+
+<footer>
+  <br>
+  <p>by:siqueira</p>
+</footer>
+</html>
